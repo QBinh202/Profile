@@ -3,61 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Lê Quốc Bình</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Lê Quốc Bình</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 1.5rem;
+            color: #333;
+            border-bottom: 2px solid #0072ff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .contact-info p, .skills p, .experience p, .education p, .certifications p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        .contact-info a, .skills a {
+            color: #0072ff;
+            text-decoration: none;
+        }
+        .skills ul, .experience ul, .activities ul {
+            list-style-type: none;
+        }
+        .skills li, .experience li, .activities li {
+            background: #f7f7f7;
+            border-left: 5px solid #0072ff;
+            padding: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+        .skills li:hover, .experience li:hover, .activities li:hover {
+            transform: translateX(10px);
+        }
+        .experience, .activities, .education, .certifications {
+            padding-left: 20px;
+        }
+        .experience li::before, .activities li::before {
+            content: "✔";
+            color: #0072ff;
+            padding-right: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #0072ff;
+            color: white;
+            font-size: 1rem;
+            margin-top: 50px;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="profile-container">
-        <header>
-            <h1>Lê Quốc Bình</h1>
-            <p><strong>Email:</strong> bql1907@gmail.com | <strong>Phone:</strong> 0373197192</p>
-            <p><strong>Location:</strong> Cư Xá Mai Phương, Bình Thắng, Dĩ An, Bình Dương</p>
-        </header>
 
-        <section class="skills">
+    <header>
+        <h1>Lê Quốc Bình</h1>
+        <p>Kỹ Thuật Viên Tự động hóa Và IOT</p>
+    </header>
+
+    <div class="container">
+        <section class="contact-info section">
+            <h2>Thông Tin Liên Lạc</h2>
+            <p><strong>Điện thoại:</strong> <a href="tel:+0344456449">0344456449</a></p>
+            <p><strong>Email:</strong> <a href="mailto:bql1907@gmail.com">bql1907@gmail.com</a></p>
+            <p><strong>Địa chỉ:</strong> <a href="https://www.google.com/maps?q=Cư%20Xá%20Mai%20Phương,%20Đường%20Hoàng%20Cầm,%20Bình%20Thắng,%20Dĩ%20An,%20Bình%20Dương" target="_blank">Cư Xá Mai Phương, Đường Hoàng Cầm, Bình Thắng, Dĩ An, Bình Dương</a></p>
+        </section>
+        <section class="skills section">
             <h2>Các Kỹ Năng</h2>
             <ul>
-                <li>Kỹ năng giao tiếp, làm việc nhóm</li>
-                <li>Tư duy sáng tạo, lập kế hoạch</li>
-                <li>Quản lý đội nhóm, thuyết trình</li>
+                <li><strong>Lập trình điều khiển:</strong> PLC (Siemens, Mitsubishi), Vi điều khiển (ESP32, Arduino, ...)</li>
+                <li><strong>Lập trình điều khiển nhúng:</strong> IOT2050 Siemens, Raspberry Pi</li>
+                <li><strong>Thiết kế hệ thống SCADA:</strong> Giao diện HMI, lập trình Web (Điều khiển, giám sát, cơ sở dữ liệu)</li>
+                <li><strong>Thiết kế mạch điện điều khiển:</strong> Autocad electrical, Eplan</li>
+                <li><strong>Lắp ráp và bảo trì thiết bị điện:</strong> Đấu nối khí cụ điện, thiết bị theo bản vẽ kỹ thuật</li>
             </ul>
         </section>
 
-        <section class="experience">
+        <section class="career-goals section">
+            <h2>Mục Tiêu Nghề Nghiệp</h2>
+            <p>Mục tiêu của tôi là trở thành kỹ thuật viên chuyên nghiệp, không ngừng học hỏi và tích lũy kinh nghiệm, đóng góp vào sự phát triển bền vững của công ty.</p>
+        </section>
+
+        <section class="experience section">
             <h2>Kinh Nghiệm Làm Việc</h2>
-            <div>
-                <h3>Thực Tập Sinh (5/2024 - 10/2024)</h3>
-                <p>Công Ty TNHH ACTR: Hỗ trợ kỹ sư lắp ráp thiết bị điện, lập trình, sửa chữa máy, tiếp xúc môi trường công nghiệp.</p>
-            </div>
-            <div>
-                <h3>Cộng Tác Viên, Kỹ Thuật Viên Hỗ Trợ (1/2025 - 4/2025)</h3>
-                <p>Nextpay: Bán hàng và hỗ trợ kỹ sư điều chỉnh, nâng cấp hệ thống chuyển khoản.</p>
-            </div>
+            <ul>
+                <li><strong>Thực tập sinh</strong> - Công Ty TNHH ACTR (5/2024 - 10/2024): Hỗ trợ kỹ sư lắp ráp thiết bị điện, lập trình, sửa chữa máy.</li>
+                <li><strong>Cộng tác viên, Kỹ thuật viên hỗ trợ</strong> - Nextpay (1/2025 - 4/2025): Bán hàng và hỗ trợ kỹ sư chỉnh sửa, nâng cấp hệ thống chuyển khoản.</li>
+            </ul>
         </section>
 
-        <section class="education">
-            <h2>Học Vấn</h2>
-            <p>Điều khiển và Tự động hóa, Đại học Nông Lâm TP HCM (2021 - 2026)</p>
-            <p>Học về các thiết bị điện tự động, IOT, lập trình và điều khiển thiết bị điện tự động, vi điều khiển, nhúng.</p>
-        </section>
-
-        <section class="projects">
+        <section class="activities section">
             <h2>Hoạt Động</h2>
-            <div>
-                <h3>Leader (9/2024 - 12/2024)</h3>
-                <p>Thiết kế chế tạo robot lưu trữ kho điều khiển điện giao tiếp qua HMI.</p>
-            </div>
-            <div>
-                <h3>Leader (2/2025 - 6/2025)</h3>
-                <p>Kết nối giao tiếp thiết bị IOT với server, lập trình thu thập dữ liệu và gửi lên server, lập trình web dashboard hiển thị dữ liệu realtime.</p>
-            </div>
+            <ul>
+                <li><strong>Leader - Nhóm 10 sinh viên:</strong> Thiết kế chế tạo và lập trình điều khiển robot thông qua PLC, HMI.</li>
+                <li><strong>Leader - Nhóm 2 sinh viên:</strong> Thiết kế và lập trình điều khiển hệ thống ấp trứng gia cầm qua web online IOT.</li>
+                <li><strong>Leader - Nhóm 2 sinh viên:</strong> Lập trình thu thập dữ liệu và gửi lên server, lập trình web dashboard hiển thị dữ liệu realtime.</li>
+                <li><strong>Thành viên - Nhóm 5 sinh viên:</strong> Thiết kế và lập trình điều khiển hệ thống cánh tay robot gắp vật.</li>
+            </ul>
         </section>
 
-        <footer>
-            <p>&copy; 2025 Lê Quốc Bình</p>
-        </footer>
+        <section class="education section">
+            <h2>Học Vấn</h2>
+            <p><strong>Điều khiển và tự động hóa</strong> - Đại học Nông Lâm TP HCM (2021 - 2026)</p>
+            <p>Học và thực hành sử dụng các thiết bị điện tự động, IOT, lập trình và điều khiển thiết bị điện tự động, vi điều khiển, nhúng.</p>
+        </section>
+
+        <section class="certifications section">
+            <h2>Chứng Chỉ</h2>
+            <p><strong>2025:</strong> Các khóa học cơ bản về lập trình như C, C++, C#, Python, HTML, CSS, JS.</p>
+        </section>
     </div>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>© 2025 Lê Quốc Bình. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
